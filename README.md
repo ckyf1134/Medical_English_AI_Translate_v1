@@ -1,6 +1,6 @@
 <div align="center">
 
-CCMU # 医学文献翻译 Agent · v1.0
+CCMU · **医学文献翻译 Agent · v1.0**
 
 **英文医学 PDF → 中文译稿 · 中英对照 · 术语表 · 质检报告 · 文献总结** 一键生成
 
