@@ -1,0 +1,529 @@
+{
+  "sepsis": {
+    "target": "脓毒症",
+    "category": "disease"
+  },
+  "septic shock": {
+    "target": "感染性休克",
+    "category": "disease"
+  },
+  "infection": {
+    "target": "感染",
+    "category": "disease"
+  },
+  "inflammation": {
+    "target": "炎症",
+    "category": "pathophysiology"
+  },
+  "chronic inflammatory disease": {
+    "target": "慢性炎症性疾病",
+    "category": "pathophysiology"
+  },
+  "periodontitis": {
+    "target": "牙周炎",
+    "category": "disease"
+  },
+  "organ dysfunction": {
+    "target": "器官功能障碍",
+    "category": "clinical_concept"
+  },
+  "dysregulated host response": {
+    "target": "宿主反应失调",
+    "category": "pathophysiology"
+  },
+  "mortality": {
+    "target": "死亡率",
+    "category": "outcome"
+  },
+  "28-day mortality": {
+    "target": "28天死亡率",
+    "category": "outcome"
+  },
+  "morbidity": {
+    "target": "发病率",
+    "category": "outcome"
+  },
+  "prognosis": {
+    "target": "预后",
+    "category": "outcome"
+  },
+  "bone resorption": {
+    "target": "骨吸收",
+    "category": "pathophysiology"
+  },
+  "alveolar bone": {
+    "target": "牙槽骨",
+    "category": "anatomy"
+  },
+  "bone remodeling": {
+    "target": "骨重塑",
+    "category": "pathophysiology"
+  },
+  "bone regeneration": {
+    "target": "骨再生",
+    "category": "pathophysiology"
+  },
+  "periodontal tissue": {
+    "target": "牙周组织",
+    "category": "anatomy",
+    "aliases": [
+      "periodontal tissues"
+    ]
+  },
+  "tooth loss": {
+    "target": "牙齿缺失",
+    "category": "clinical_concept"
+  },
+  "oral microbiota": {
+    "target": "口腔微生物群",
+    "category": "microbiology"
+  },
+  "microbial interaction": {
+    "target": "微生物相互作用",
+    "category": "microbiology"
+  },
+  "pathogen": {
+    "target": "病原体",
+    "category": "microbiology"
+  },
+  "plaque": {
+    "target": "牙菌斑",
+    "category": "microbiology"
+  },
+  "retrospective cohort study": {
+    "target": "回顾性队列研究",
+    "category": "study_design"
+  },
+  "prospective study": {
+    "target": "前瞻性研究",
+    "category": "study_design"
+  },
+  "randomized controlled trial": {
+    "target": "随机对照试验",
+    "category": "study_design",
+    "aliases": [
+      "randomised controlled trial",
+      "RCT"
+    ]
+  },
+  "inclusion criteria": {
+    "target": "纳入标准",
+    "category": "research_method"
+  },
+  "exclusion criteria": {
+    "target": "排除标准",
+    "category": "research_method"
+  },
+  "primary outcome": {
+    "target": "主要结局",
+    "category": "research_method"
+  },
+  "secondary outcome": {
+    "target": "次要结局",
+    "category": "research_method"
+  },
+  "sample size": {
+    "target": "样本量",
+    "category": "research_method"
+  },
+  "follow-up": {
+    "target": "随访",
+    "category": "research_method"
+  },
+  "statistical significance": {
+    "target": "统计学显著性",
+    "category": "statistics"
+  },
+  "tertiary hospital": {
+    "target": "三级医院",
+    "category": "healthcare"
+  },
+  "laboratory markers": {
+    "target": "实验室指标",
+    "category": "laboratory",
+    "aliases": [
+      "laboratory marker"
+    ]
+  },
+  "C-reactive protein": {
+    "target": "C反应蛋白",
+    "category": "laboratory",
+    "aliases": [
+      "CRP"
+    ]
+  },
+  "lactate": {
+    "target": "乳酸",
+    "category": "laboratory"
+  },
+  "platelet count": {
+    "target": "血小板计数",
+    "category": "laboratory"
+  },
+  "white blood cell count": {
+    "target": "白细胞计数",
+    "category": "laboratory",
+    "aliases": [
+      "WBC count"
+    ]
+  },
+  "blood culture": {
+    "target": "血培养",
+    "category": "diagnostic_test"
+  },
+  "area under the curve": {
+    "target": "曲线下面积",
+    "category": "statistics",
+    "aliases": [
+      "AUC"
+    ]
+  },
+  "adjusted odds ratio": {
+    "target": "校正比值比",
+    "category": "statistics",
+    "aliases": [
+      "adjusted OR"
+    ]
+  },
+  "confidence interval": {
+    "target": "置信区间",
+    "category": "statistics",
+    "aliases": [
+      "CI"
+    ]
+  },
+  "median": {
+    "target": "中位数",
+    "category": "statistics",
+    "target_aliases": [
+      "中位"
+    ]
+  },
+  "mean": {
+    "target": "均值",
+    "category": "statistics"
+  },
+  "standard deviation": {
+    "target": "标准差",
+    "category": "statistics",
+    "aliases": [
+      "SD"
+    ]
+  },
+  "interquartile range": {
+    "target": "四分位距",
+    "category": "statistics",
+    "aliases": [
+      "IQR"
+    ]
+  },
+  "p value": {
+    "target": "P值",
+    "category": "statistics",
+    "aliases": [
+      "p-value",
+      "P value"
+    ]
+  },
+  "correlation": {
+    "target": "相关性",
+    "category": "statistics"
+  },
+  "regression analysis": {
+    "target": "回归分析",
+    "category": "statistics"
+  },
+  "multivariate analysis": {
+    "target": "多因素分析",
+    "category": "statistics"
+  },
+  "adverse outcome": {
+    "target": "不良结局",
+    "category": "outcome",
+    "aliases": [
+      "adverse outcomes"
+    ],
+    "target_aliases": [
+      "不良预后",
+      "不良结局"
+    ]
+  },
+  "clinical risk assessment": {
+    "target": "临床风险评估",
+    "category": "clinical_concept"
+  },
+  "suspected infection": {
+    "target": "疑似感染",
+    "category": "clinical_concept"
+  },
+  "external validation": {
+    "target": "外部验证",
+    "category": "research_method"
+  },
+  "causal interpretation": {
+    "target": "因果解释",
+    "category": "research_method"
+  },
+  "neutrophil": {
+    "target": "中性粒细胞",
+    "category": "cell_type",
+    "aliases": [
+      "neutrophils"
+    ]
+  },
+  "macrophage": {
+    "target": "巨噬细胞",
+    "category": "cell_type",
+    "aliases": [
+      "macrophages"
+    ]
+  },
+  "monocyte": {
+    "target": "单核细胞",
+    "category": "cell_type",
+    "aliases": [
+      "monocytes"
+    ]
+  },
+  "osteoclast": {
+    "target": "破骨细胞",
+    "category": "cell_type",
+    "aliases": [
+      "osteoclasts"
+    ]
+  },
+  "osteoblast": {
+    "target": "成骨细胞",
+    "category": "cell_type",
+    "aliases": [
+      "osteoblasts"
+    ]
+  },
+  "precursor cell": {
+    "target": "前体细胞",
+    "category": "cell_type",
+    "aliases": [
+      "precursor cells"
+    ]
+  },
+  "cell membrane": {
+    "target": "细胞膜",
+    "category": "cell_biology"
+  },
+  "cytoplasm": {
+    "target": "细胞质",
+    "category": "cell_biology"
+  },
+  "nucleus": {
+    "target": "细胞核",
+    "category": "cell_biology"
+  },
+  "lysosome": {
+    "target": "溶酶体",
+    "category": "cell_biology"
+  },
+  "endosome": {
+    "target": "内体",
+    "category": "cell_biology"
+  },
+  "endocytosis": {
+    "target": "内吞作用",
+    "category": "cell_biology"
+  },
+  "phagocytosis": {
+    "target": "吞噬作用",
+    "category": "cell_biology"
+  },
+  "apoptosis": {
+    "target": "细胞凋亡",
+    "category": "cell_biology"
+  },
+  "proliferation": {
+    "target": "增殖",
+    "category": "cell_biology"
+  },
+  "differentiation": {
+    "target": "分化",
+    "category": "cell_biology"
+  },
+  "migration": {
+    "target": "迁移",
+    "category": "cell_biology"
+  },
+  "gene expression": {
+    "target": "基因表达",
+    "category": "molecular_biology"
+  },
+  "upregulation": {
+    "target": "上调",
+    "category": "molecular_biology"
+  },
+  "downregulation": {
+    "target": "下调",
+    "category": "molecular_biology"
+  },
+  "transcription": {
+    "target": "转录",
+    "category": "molecular_biology"
+  },
+  "translation": {
+    "target": "翻译",
+    "category": "molecular_biology"
+  },
+  "signaling pathway": {
+    "target": "信号通路",
+    "category": "molecular_biology",
+    "aliases": [
+      "signalling pathway"
+    ]
+  },
+  "receptor": {
+    "target": "受体",
+    "category": "molecular_biology"
+  },
+  "ligand": {
+    "target": "配体",
+    "category": "molecular_biology"
+  },
+  "inhibitor": {
+    "target": "抑制剂",
+    "category": "molecular_biology"
+  },
+  "agonist": {
+    "target": "激动剂",
+    "category": "molecular_biology"
+  },
+  "antagonist": {
+    "target": "拮抗剂",
+    "category": "molecular_biology"
+  },
+  "antibody": {
+    "target": "抗体",
+    "category": "immunology"
+  },
+  "antigen": {
+    "target": "抗原",
+    "category": "immunology"
+  },
+  "cytokine": {
+    "target": "细胞因子",
+    "category": "immunology"
+  },
+  "chemokine": {
+    "target": "趋化因子",
+    "category": "immunology"
+  },
+  "immune response": {
+    "target": "免疫应答",
+    "category": "immunology"
+  },
+  "innate immunity": {
+    "target": "固有免疫",
+    "category": "immunology"
+  },
+  "adaptive immunity": {
+    "target": "适应性免疫",
+    "category": "immunology"
+  },
+  "neutrophil extracellular traps": {
+    "target": "中性粒细胞胞外诱捕网",
+    "category": "immunology",
+    "aliases": [
+      "NETs",
+      "neutrophil extracellular trap"
+    ]
+  },
+  "reactive oxygen species": {
+    "target": "活性氧",
+    "category": "molecular_biology",
+    "aliases": [
+      "ROS"
+    ]
+  },
+  "oxidative stress": {
+    "target": "氧化应激",
+    "category": "pathophysiology"
+  },
+  "in vitro": {
+    "target": "体外",
+    "category": "research_method"
+  },
+  "in vivo": {
+    "target": "体内",
+    "category": "research_method"
+  },
+  "western blot": {
+    "target": "蛋白质印迹",
+    "category": "laboratory",
+    "aliases": [
+      "western blotting"
+    ],
+    "target_aliases": [
+      "Western blot",
+      "免疫印迹"
+    ]
+  },
+  "immunofluorescence": {
+    "target": "免疫荧光",
+    "category": "laboratory"
+  },
+  "immunohistochemistry": {
+    "target": "免疫组织化学",
+    "category": "laboratory"
+  },
+  "reverse transcription quantitative PCR": {
+    "target": "逆转录定量PCR",
+    "category": "laboratory",
+    "aliases": [
+      "RT-qPCR",
+      "RT-qPCR analysis"
+    ],
+    "target_aliases": [
+      "实时荧光定量PCR"
+    ]
+  },
+  "flow cytometry": {
+    "target": "流式细胞术",
+    "category": "laboratory"
+  },
+  "enzyme-linked immunosorbent assay": {
+    "target": "酶联免疫吸附测定",
+    "category": "laboratory",
+    "aliases": [
+      "ELISA"
+    ]
+  },
+  "nanoparticle": {
+    "target": "纳米颗粒",
+    "category": "nanomedicine",
+    "aliases": [
+      "nanoparticles"
+    ]
+  },
+  "nanomaterial": {
+    "target": "纳米材料",
+    "category": "nanomedicine",
+    "aliases": [
+      "nanomaterials"
+    ]
+  },
+  "drug delivery": {
+    "target": "药物递送",
+    "category": "nanomedicine"
+  },
+  "targeted therapy": {
+    "target": "靶向治疗",
+    "category": "treatment"
+  },
+  "photothermal therapy": {
+    "target": "光热治疗",
+    "category": "treatment"
+  },
+  "near-infrared": {
+    "target": "近红外",
+    "category": "physics",
+    "aliases": [
+      "NIR"
+    ]
+  }
+}

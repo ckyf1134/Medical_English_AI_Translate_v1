@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>医学文献翻译 Agent</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">M</div>
+        <div>
+          <h1>医学文献翻译</h1>
+          <p>本地离线 Agent</p>
+        </div>
+      </div>
+
+      <section class="sidebar-card">
+        <div class="section-kicker">运行状态</div>
+        <div class="status-row">
+          <span id="ollama-dot" class="status-dot"></span>
+          <div>
+            <strong id="ollama-status">检查中…</strong>
+            <span id="ollama-detail">正在连接本地模型</span>
+          </div>
+        </div>
+        <div id="model-chips" class="model-chips"></div>
+      </section>
+
+      <section class="sidebar-card">
+        <div class="section-kicker">模型分工</div>
+        <div class="model-role"><span>预处理（未启用）</span><strong>DeepSeek-R1-1.5B</strong></div>
+        <div class="model-role"><span>主翻译</span><strong>Qwen3-14B-Q4KM</strong></div>
+        <div class="model-role"><span>复审与总结</span><strong>Gemma-4-E4B</strong></div>
+      </section>
+
+      <section class="sidebar-card hint-card">
+        <div class="section-kicker">离线运行</div>
+        <p>先手动启动项目自带 Ollama，再上传文献。WebUI 不会自动联网或下载模型。</p>
+      </section>
+      <section class="sidebar-card cache-card">
+        <div class="section-kicker">临时缓存</div>
+        <p>只清理上传缓存和任务状态，不会删除 output 内的最终结果。</p>
+        <div class="cache-line">
+          <strong id="cache-size">计算中…</strong>
+          <button id="clear-cache-button" class="button danger small" type="button">清理缓存</button>
+        </div>
+      </section>
+
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">MEDICAL DOCUMENT WORKFLOW</div>
+          <h2>PDF 输入，自动输出中文文献与总结</h2>
+        </div>
+        <div class="topbar-badge">自动翻译</div>
+      </header>
+
+      <section class="upload-card">
+        <div id="dropzone" class="dropzone">
+          <input id="file-input" type="file" accept="application/pdf,.pdf" hidden>
+          <div class="upload-icon">PDF</div>
+          <h3>拖入英文医学 PDF</h3>
+          <p>或点击选择文件。支持电子版论文，扫描版将在后续 OCR 模块中增强。</p>
+          <div id="file-meta" class="file-meta hidden"></div>
+          <button id="choose-button" class="button secondary" type="button">选择 PDF</button>
+          <button id="start-button" class="button primary" type="button" disabled>开始自动翻译</button>
+        </div>
+      </section>
+
+      <section id="job-panel" class="job-panel hidden">
+        <div class="panel-header">
+          <div>
+            <div class="section-kicker">当前任务</div>
+            <h3 id="job-title">等待处理</h3>
+          </div>
+          <span id="job-badge" class="job-badge">就绪</span>
+        </div>
+
+        <div class="progress-wrap">
+          <div class="progress-meta">
+            <span id="progress-message">等待上传</span>
+            <strong id="progress-value">0%</strong>
+          </div>
+          <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+        </div>
+
+        <div class="job-grid">
+          <div class="stage-list" id="stage-list"></div>
+          <div class="log-card">
+            <div class="log-header"><span>运行日志</span><button id="refresh-button" class="text-button" type="button">刷新</button></div>
+            <pre id="job-log">尚未开始。</pre>
+          </div>
+        </div>
+
+        <div id="result-section" class="result-section hidden">
+          <div class="section-heading">
+            <div><div class="section-kicker">交付结果</div><h3>文件已经生成</h3></div>
+            <a id="job-folder" class="path-link" href="#" target="_blank" rel="noreferrer">打开中文 PDF</a>
+          </div>
+          <div class="output-folder-box"><span>输出文件夹</span><strong id="output-folder">-</strong></div>
+          <div id="result-grid" class="result-grid"></div>
+        </div>
+      </section>
+
+      <section class="history-section">
+        <div class="section-heading">
+          <div><div class="section-kicker">任务记录</div><h3>最近处理</h3></div>
+          <button id="history-refresh" class="button secondary small" type="button">刷新记录</button>
+        </div>
+        <div id="history-list" class="history-list"><div class="empty-state">还没有处理记录。</div></div>
+      </section>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

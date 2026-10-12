@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "engine": "windows",
+  "dpi": 200,
+  "languages": ["en-GB", "en-US", "zh-Hans-CN"],
+  "timeout_seconds": 900,
+  "max_pages": 300,
+  "font": {
+    "candidates": [
+      "vendor/fonts/NotoSansSC-Regular.ttf",
+      "C:/Windows/Fonts/msyh.ttc",
+      "C:/Windows/Fonts/simsun.ttc",
+      "C:/Windows/Fonts/Deng.ttf",
+      "C:/Windows/Fonts/simhei.ttf"
+    ],
+    "fallback": "china-s"
+  }
+}
