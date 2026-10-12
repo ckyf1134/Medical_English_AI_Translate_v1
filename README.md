@@ -1,10 +1,10 @@
 <div align="center">
 
-# 医学文献翻译 Agent · v1.0
+CCMU # 医学文献翻译 Agent · v1.0
 
-**英文医学 PDF → 中文译稿 · 中英对照 · 术语表 · 质检报告 · 文献总结**
+**英文医学 PDF → 中文译稿 · 中英对照 · 术语表 · 质检报告 · 文献总结** 一键生成
 
-**完全离线**运行，翻译模型跑在本机 GPU 上，文档不出本机。
+**本地化运行**
 
 ![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11%20x64-0078D4?logo=windows&logoColor=white)
